@@ -1,0 +1,58 @@
+.menu-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 7px 40px 7px 0;
+    background-color: #000;
+    position: relative;
+}
+
+
+.menu-item-link{
+    padding-left: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item a:hover{
+    color: #f15e2c;
+}
+
+.item-link{
+    text-decoration: none;
+    color: black;
+}
+
+.item-link:hover{
+    color: rgba(0,0,0, 0.7);
+}
+
+.drop-list{
+    position: absolute;
+    background-color: #000;
+    top: 35px;
+    right: 156px;
+    padding: 10px 24px;
+    z-index: 1;
+    display: none;
+}
+
+.drop-list::after{
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 144px;
+    height: 30px;
+}
+
+.menu-item:hover .drop-list{
+    display: block;
+}
+.drop-item{
+    color: #fff;
+    padding: 0 0 10px 15px;
+    text-decoration: none;
+    display: block;
+}
